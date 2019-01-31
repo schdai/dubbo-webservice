@@ -14,7 +14,7 @@
 	<dubbo:registry address="zookeeper://127.0.0.1:2181" />
 
 	<!-- 用webservice协议在8080端口暴露服务 ， 端口必须与 tomcat端口一致-->
-	<dubbo:protocol name="webservice" port="8080"	server="servlet" />
+	<dubbo:protocol name="dubbo" />
 
 	<!-- 声明需要暴露的服务接口. 如果
 	不用path， 则调用web服务地址：http://localhost:8080/dubbo-webservice/services/com.enson.webservice.service.DubboService?wsdl
